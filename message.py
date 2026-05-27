@@ -7,12 +7,8 @@ def intro(profile: UserProfile) -> str:
     )  
 
 def get_age_status(profile : UserProfile) -> str:
-    
-    if profile.user_age >= 18:
-        return "I am an Adult"
-    else:
-        return "I am a Minor" 
-    
+    return "I am an Adult" if profile.user_age >= 18 else "I am a Minor"
+
 if __name__ == "__main__":
     print("Please run the main.py to execute the program")
     exit()
